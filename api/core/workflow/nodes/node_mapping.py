@@ -19,12 +19,12 @@ from core.workflow.nodes.question_classifier import QuestionClassifierNode
 from core.workflow.nodes.start import StartNode
 from core.workflow.nodes.template_transform import TemplateTransformNode
 from core.workflow.nodes.tool import ToolNode
-from core.workflow.nodes.variable_aggregator import VariableAggregatorNode
-from core.workflow.nodes.variable_assigner.v1 import VariableAssignerNode as VariableAssignerNodeV1
-from core.workflow.nodes.variable_assigner.v2 import VariableAssignerNode as VariableAssignerNodeV2
 
 # custom
 from core.workflow.nodes.vannaai_connector import VannaaiConnectorNode
+from core.workflow.nodes.variable_aggregator import VariableAggregatorNode
+from core.workflow.nodes.variable_assigner.v1 import VariableAssignerNode as VariableAssignerNodeV1
+from core.workflow.nodes.variable_assigner.v2 import VariableAssignerNode as VariableAssignerNodeV2
 
 LATEST_VERSION = "latest"
 

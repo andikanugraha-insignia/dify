@@ -1,6 +1,6 @@
 import mysql.connector
-import psycopg2
 import oracledb
+import psycopg2
 
 
 class DatabaseConnectorService:
