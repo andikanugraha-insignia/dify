@@ -908,6 +908,12 @@ class AccountConfig(BaseSettings):
     )
 
 
+class VannaaiConfig(BaseSettings):
+    VANNAAI_USE_SYSTEM_EMBEDDING: bool = Field(
+        description="Use system embedding for Vannaai Training, Question, and Output",
+        default=False,
+    )
+
 class FeatureConfig(
     # place the configs in alphabet order
     AppExecutionConfig,
@@ -942,5 +948,7 @@ class FeatureConfig(
     # hosted services config
     HostedServiceConfig,
     CeleryBeatConfig,
+    # custom config
+    VannaaiConfig,
 ):
     pass
