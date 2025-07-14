@@ -26,6 +26,25 @@ class NodeType(StrEnum):
     LIST_OPERATOR = "list-operator"
     AGENT = "agent"
 
+    # custom blocks
+    SUMMARIZER = "summarizer"
+    EXPLAINER = "explainer"
+    FILTERED_KNOWLEDGE_RETRIEVAL = "filtered-knowledge-retrieval"
+    CACHE_RETRIEVE = "cache-retrieve"
+    CACHE_STORE = "cache-store"
+
+    # vanna.ai
+    VANNAAI_CONNECTOR = "vannaai-connector"
+    VANNAAI_TRAINING = "vannaai-training"
+    VANNAAI_QUESTION = "vannaai-question"
+    SQL_OUTPUT_TABLE = "sql-output-table"
+    SQL_OUTPUT_SUMMARY = "sql-output-summary"
+    SQL_OUTPUT_CHART = "sql-output-chart"
+    
+    # RCA
+    RCA_TRAINING = "rca-training"
+    RCA_QUESTION = "rca-question"
+
 
 class ErrorStrategy(StrEnum):
     FAIL_BRANCH = "fail-branch"

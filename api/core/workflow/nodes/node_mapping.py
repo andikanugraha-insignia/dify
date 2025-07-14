@@ -23,6 +23,9 @@ from core.workflow.nodes.variable_aggregator import VariableAggregatorNode
 from core.workflow.nodes.variable_assigner.v1 import VariableAssignerNode as VariableAssignerNodeV1
 from core.workflow.nodes.variable_assigner.v2 import VariableAssignerNode as VariableAssignerNodeV2
 
+# custom
+from core.workflow.nodes.vannaai_connector import VannaaiConnectorNode
+
 LATEST_VERSION = "latest"
 
 # NOTE(QuantumGhost): This should be in sync with subclasses of BaseNode.
@@ -125,5 +128,10 @@ NODE_TYPE_CLASSES_MAPPING: Mapping[NodeType, Mapping[str, type[BaseNode]]] = {
         LATEST_VERSION: AgentNode,
         "2": AgentNode,
         "1": AgentNode,
+    },
+    # custom
+    NodeType.VANNAAI_CONNECTOR: {
+        LATEST_VERSION: VannaaiConnectorNode,
+        "1": VannaaiConnectorNode,
     },
 }
